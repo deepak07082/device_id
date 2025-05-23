@@ -27,17 +27,20 @@ iOS
 Use UIDevice.current.identifierForVendor?.uuidString in the generated DeviceIdApi.m file.
 
 ## 🚀 Usage
-
+```dart
 import 'package:device_id_plugin/device_id.dart';
 
 final deviceId = await DeviceId().getDeviceId();
 print('Device ID: $deviceId');
+```
 
 ## 🔒 Permissions
 Ensure required permissions are added in the platform projects:
 
-    Android: No special permission required to access ANDROID_ID.
-    iOS: No permission needed for identifierForVendor.
+Android: 
+    No special permission required to access ANDROID_ID.
+iOS: 
+    No permission needed for identifierForVendor.
 
 ## 📱 Compatibility
 
