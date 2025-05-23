@@ -3,6 +3,11 @@ description: "get device UUID"
 version: 1.0.2
 homepage: https://github.com/deepak07082/device_id.git
 
+topics:
+  - device_id
+  - platform_id
+  - UUID
+
 environment:
   sdk: ^3.8.0
   flutter: '>=3.3.0'
