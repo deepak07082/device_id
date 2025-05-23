@@ -1,29 +1,26 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:device_id/device_id.dart';
-import 'package:device_id/device_id_platform_interface.dart';
-import 'package:device_id/device_id_method_channel.dart';
-import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+// ignore_for_file: non_constant_identifier_names
 
-class MockDeviceIdPlatform
-    with MockPlatformInterfaceMixin
-    implements DeviceIdPlatform {
+import 'package:flutter/src/services/binary_messenger.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:device_id/device_id_api.dart';
+
+class MockDeviceIdApi implements DeviceIdApi {
+  @override
+  Future<String> getDeviceId() async {
+    return 'mock_device_id';
+  }
 
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  BinaryMessenger? get pigeonVar_binaryMessenger => throw UnimplementedError();
+
+  @override
+  String get pigeonVar_messageChannelSuffix => throw UnimplementedError();
 }
 
 void main() {
-  final DeviceIdPlatform initialPlatform = DeviceIdPlatform.instance;
-
-  test('$MethodChannelDeviceId is the default instance', () {
-    expect(initialPlatform, isInstanceOf<MethodChannelDeviceId>());
-  });
-
-  test('getPlatformVersion', () async {
-    DeviceId deviceIdPlugin = DeviceId();
-    MockDeviceIdPlatform fakePlatform = MockDeviceIdPlatform();
-    DeviceIdPlatform.instance = fakePlatform;
-
-    expect(await deviceIdPlugin.getPlatformVersion(), '42');
+  test('getDeviceId returns mocked value', () async {
+    final mockApi = MockDeviceIdApi();
+    final result = await mockApi.getDeviceId();
+    expect(result, 'mock_device_id');
   });
 }

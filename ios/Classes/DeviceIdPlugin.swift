@@ -3,17 +3,8 @@ import UIKit
 
 public class DeviceIdPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "device_id", binaryMessenger: registrar.messenger())
-    let instance = DeviceIdPlugin()
-    registrar.addMethodCallDelegate(instance, channel: channel)
-  }
-
-  public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
-    default:
-      result(FlutterMethodNotImplemented)
-    }
+    // Register the Pigeon API using your implementation
+    let messenger = registrar.messenger()
+    DeviceIdApiSetup.setUp(binaryMessenger: messenger, api: DeviceIdApiImpl())
   }
 }

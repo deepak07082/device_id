@@ -1,8 +1,9 @@
-
-import 'device_id_platform_interface.dart';
+import 'device_id_api.dart';
 
 class DeviceId {
-  Future<String?> getPlatformVersion() {
-    return DeviceIdPlatform.instance.getPlatformVersion();
+  Future<String?> getDeviceId() async {
+    final api = DeviceIdApi();
+    final deviceId = await api.getDeviceId();
+    return deviceId;
   }
 }
