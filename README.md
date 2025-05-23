@@ -1,10 +1,10 @@
-# 📱 device_id for Flutter
+# 📱 device_platform_uid for Flutter
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://pub.dev/packages/fast_cache_network_image)
-[![pub](https://img.shields.io/pub/v/fast_cache_network_image)](https://pub.dev/packages/fast_cache_network_image)
-[![dart](https://img.shields.io/badge/dart-pure%20dart-success)](https://pub.dev/packages/fast_cache_network_image)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://pub.dev/packages/device_platform_uid)
+[![pub](https://img.shields.io/pub/v/fast_cache_network_image)](https://pub.dev/packages/device_platform_uid)
+[![dart](https://img.shields.io/badge/dart-pure%20dart-success)](https://pub.dev/packages/device_platform_uid)
 
-A lightweight Flutter plugin to retrieve the **device_id** from Android and iOS using native code. It uses [Pigeon](https://pub.dev/packages/pigeon) for type-safe, compile-time-safe communication between Dart and the platform-specific layers.
+A lightweight Flutter plugin to retrieve the **device_platform_uid** from Android and iOS using native code. It uses [Pigeon](https://pub.dev/packages/pigeon) for type-safe, compile-time-safe communication between Dart and the platform-specific layers.
 
 ## ✨ Features
 
@@ -18,7 +18,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  device_id: ^latest_version
+  device_platform_uid: ^latest_version
 ```
 
 ## 🛠️ Platform Implementation
@@ -30,7 +30,7 @@ Use UIDevice.current.identifierForVendor?.uuidString in the generated DeviceIdAp
 
 ## 🚀 Usage
 ```dart
-import 'package:device_id_plugin/device_id.dart';
+import 'package:device_platform_uid/device_id.dart';
 
 final deviceId = await DeviceId().getDeviceId();
 print('Device ID: $deviceId');

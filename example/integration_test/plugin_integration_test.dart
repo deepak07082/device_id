@@ -9,7 +9,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
-import 'package:device_id/device_id.dart';
+import 'package:device_platform_uid/device_id.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:device_id/device_id.dart';
+import 'package:device_platform_uid/device_id.dart';
 
 void main() {
   runApp(const MyApp());

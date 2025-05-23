@@ -1,4 +1,4 @@
-name: device_id
+name: device_platform_uid
 description: "get device UUID"
 version: 1.0.1
 homepage: 

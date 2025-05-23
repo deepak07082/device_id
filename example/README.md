@@ -1,4 +1,4 @@
-# device_id_example
+# device_platform_uid_example
 
 Demonstrates how to use the device_id plugin.
 
