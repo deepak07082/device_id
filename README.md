@@ -1,5 +1,8 @@
 # 📱 device_id for Flutter
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://pub.dev/packages/fast_cache_network_image)
+[![pub](https://img.shields.io/pub/v/fast_cache_network_image)](https://pub.dev/packages/fast_cache_network_image)
+[![dart](https://img.shields.io/badge/dart-pure%20dart-success)](https://pub.dev/packages/fast_cache_network_image)
 
 A lightweight Flutter plugin to retrieve the **device_id** from Android and iOS using native code. It uses [Pigeon](https://pub.dev/packages/pigeon) for type-safe, compile-time-safe communication between Dart and the platform-specific layers.
 
@@ -49,7 +52,7 @@ iOS:
 | iOS      | ✅         |
 
 ## 📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/deepak07082/device_id/blob/main/LICENSE) file for details.
 
 ## 💬 Contributing
 Feel free to submit issues or pull requests. Contributions are welcome!
