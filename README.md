@@ -13,11 +13,10 @@ A lightweight Flutter plugin to retrieve the **device_id** from Android and iOS 
 
 Add the package to your `pubspec.yaml`:
 
-yaml
+```yaml
 dependencies:
-  device_id_plugin:
-    git:
-      url: https://github.com/your_username/device_id_plugin.git
+  device_id: ^latest_version
+```
 
 ## 🛠️ Platform Implementation
 Android
