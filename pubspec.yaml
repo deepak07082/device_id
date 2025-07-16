@@ -1,6 +1,6 @@
 name: device_platform_uid
 description: "get device UUID"
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/deepak07082/device_id.git
 
 topics:
