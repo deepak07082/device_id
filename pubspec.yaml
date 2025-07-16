@@ -4,8 +4,8 @@ version: 1.0.3
 homepage: https://github.com/deepak07082/device_id.git
 
 topics:
-  - device_id
-  - platform_id
+  - deviceid
+  - platformid
   - UUID
 
 environment:
